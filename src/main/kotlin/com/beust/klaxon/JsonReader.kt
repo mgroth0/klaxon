@@ -15,6 +15,11 @@ class JsonReader(val reader: Reader) : Reader() {
      * @return the next Int.
      */
     fun nextInt() = consumeValue { value -> value as Int }
+    
+    /**
+     * @return the next Long.
+     */
+    fun nextLong() = consumeValue { value -> value as Long }
 
     /**
      * @return the next Double.
